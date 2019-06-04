@@ -1,0 +1,75 @@
+
+h1{
+  font-size: 20px;
+  margin-top: 15px;
+  padding-left: 15px;
+}
+body {
+  width: 480px;
+  height: 767px;
+}
+main #a{
+  width: 480px;
+  height: 47px;
+  border: 2px solid black;
+  background-color: rgb(90, 186, 241);
+  margin-left: 160px;
+}
+main #b{
+  width: 480px;
+  height: 150px;
+  border: 2px solid black;
+  background-color: rgb(90, 186, 241);
+  margin-left: 160px;
+}
+main #c{
+  width: 480px;
+  height: 125px;
+  border: 2px solid black;
+  background-color: rgb(90, 186, 241);
+  margin-left: 160px;
+}
+main #d{
+  width: 480px;
+  height: 125px;
+  border: 2px solid black;
+  background-color: rgb(90, 186, 241);
+  margin-left: 160px;
+}
+main #e{
+  width: 240px;
+  height: 250px;
+  border: 2px solid black;
+  background-color: rgb(90, 186, 241);
+  margin-left: 160px;
+}
+main #g{
+  width: 240px;
+  height: 250px;
+  border: 2px solid black;
+  background-color: rgb(90, 186, 241);
+  margin-left: 160px;
+}
+main #f {
+  width: 240px;
+  height: 250px;
+  border: 2px solid black;
+  background-color: rgb(236, 238, 101);
+  float:right;
+}
+main #h {
+  width: 240px;
+  height: 250px;
+  border: 2px solid black;
+  background-color: rgb(236, 238, 101);
+  float: right;
+}
+
+footer {
+  background-color: pink;
+  width: 480px;
+  height: 80px;
+  clear: left;
+}
+
+ /* float: left; */
