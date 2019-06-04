@@ -86,37 +86,38 @@ footer {
     height: 600px;
     background-color: rgb(2, 55, 85);
     line-height: 600px;
-
+    float: left;
   }
   main #c{
     width: 380px;
     height: 200px;
     background-color: rgb(3, 38, 58);
     line-height: 200px;
+    float: left;
   }
   main #d{
-    width: 480px;
-    height: 125px;
+    width: 380px;
+    height: 200px;
     background-color: rgb(25, 64, 87);
-    line-height: 125px;
+    line-height: 200px;
+    float: left;
   }
   main #e{
-    width: 240px;
+    width: 190px;
     height: 250px;
     background-color: rgb(10, 57, 85);
     float: left;
     line-height: 250px;
   }
   main #f {
-    width: 240px;
+    width: 190px;
     height: 250px;
     background-color: rgb(236, 238, 101);
     float: left;
     line-height: 250px;
-  
   }
   main #g{
-    width: 240px;
+    width: 190px;
     height: 250px;
     background-color: rgb(201, 204, 18);
     float: left;
@@ -124,19 +125,18 @@ footer {
   
   }
   main #h {
-    width: 240px;
+    width: 190px;
     height: 250px;
     background-color: rgb(134, 136, 17);
     float: left;
     line-height: 250px;
-  
   }
-  
   footer {
     background-color: pink;
-    width: 480px;
-    height: 80px;
-    clear: left;
-    line-height: 80px; 
+    width: 760px;
+    height: 150px;
+    line-height: 150px; 
+    float: left;
+    clear: none;
   }
 }
