@@ -32,14 +32,14 @@ main #e{
   width: 240px;
   height: 250px;
   background-color: rgb(10, 57, 85);
-  float: left;
+  display: flex;
   line-height: 250px;
 }
 main #f {
   width: 240px;
   height: 250px;
   background-color: rgb(236, 238, 101);
-  float: left;
+  display: flex;
   line-height: 250px;
 
 }
@@ -47,7 +47,7 @@ main #g{
   width: 240px;
   height: 250px;
   background-color: rgb(90, 186, 241);
-  float: left;
+  display: flex;
   line-height: 250px;
 
 }
@@ -55,7 +55,7 @@ main #h {
   width: 240px;
   height: 250px;
   background-color: rgb(134, 136, 17);
-  float: left;
+  display: flex;
   line-height: 250px;
 
 }
@@ -78,7 +78,7 @@ footer {
   main #a{
     width: 960px;
     height: 100px;
-    background-color: rgb(8, 144, 223);
+    background-color: rgb(240, 213, 125);
     line-height: 100px;
   }
   main #b{
@@ -86,41 +86,41 @@ footer {
     height: 600px;
     background-color: rgb(2, 55, 85);
     line-height: 600px;
-    float: left;
+    display: flex;
   }
   main #c{
     width: 380px;
     height: 200px;
     background-color: rgb(3, 38, 58);
     line-height: 200px;
-    float: left;
+    display: flex;
   }
   main #d{
     width: 380px;
     height: 200px;
     background-color: rgb(25, 64, 87);
     line-height: 200px;
-    float: left;
+    display: flex;
   }
   main #e{
     width: 190px;
     height: 250px;
     background-color: rgb(10, 57, 85);
-    float: left;
+    display: flex;
     line-height: 250px;
   }
   main #f {
     width: 190px;
     height: 250px;
     background-color: rgb(236, 238, 101);
-    float: left;
+    display: flex;
     line-height: 250px;
   }
   main #g{
     width: 190px;
     height: 250px;
     background-color: rgb(201, 204, 18);
-    float: left;
+    display: flex;
     line-height: 250px;
   
   }
@@ -128,7 +128,7 @@ footer {
     width: 190px;
     height: 250px;
     background-color: rgb(134, 136, 17);
-    float: left;
+    display: flex;
     line-height: 250px;
   }
   footer {
@@ -136,7 +136,7 @@ footer {
     width: 760px;
     height: 150px;
     line-height: 150px; 
-    float: left;
+    display: flex;
     clear: none;
   }
 }
