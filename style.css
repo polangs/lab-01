@@ -1,81 +1,7 @@
 
+/* DESKTOP*/
+/* @media (max-width:960px){ */
 
-/* mobile */
-body {
-text-align: center; 
-  width: 960px;
-  margin: 0px auto;
-}
-main #a{
-width: 480px;
-height: 75px;
-background-color: rgb(90, 186, 241);
-line-height: 75px;
-} */
-main #b{
-width: 480px;
-height: 150px;
-background-color: rgb(54, 137, 185);
-line-height: 150px;
-display: flex;
-}
-main #c{
-width: 480px;
-height: 125px;
-background-color: rgb(30, 86, 119);
-line-height: 125px;
-
-}
-main #d{
-width: 480px;
-height: 125px;
-background-color: rgb(25, 64, 87);
-line-height: 125px;
-}
-main #e{
-width: 240px;
-height: 250px;
-background-color: rgb(10, 57, 85);
-display: flex;
-line-height: 250px;
-}
-main #f {
-width: 240px;
-height: 250px;
-background-color: rgb(236, 238, 101);
-display: flex;
-line-height: 250px;
-
-}
-main #g{
-width: 240px;
-height: 250px;
-background-color: rgb(90, 186, 241);
-display: flex;
-line-height: 250px;
-
-}
-main #h {
-width: 240px;
-height: 250px;
-background-color: rgb(134, 136, 17);
-display: flex;
-line-height: 250px;
-
-}
-
-footer {
-background-color: pink;
-width: 480px;
-height: 80px;
-clear: left;
-line-height: 80px;
-} 
-
-
-
-/* desktop*/
-/* @media (min-width: 480px) and (max-width:767px){ */
 body {
   text-align: center;
   width: 960px;
@@ -148,11 +74,101 @@ footer {
   width: 760px;
   height: 150px;
   line-height: 150px; 
-  display: flex;
-  clear: none;
+  /* display: flex; */
+  /* clear: none; */
 }
 
 #container1 {
+  flex-direction: row;
+  border: 1px solid green;
+  line-height: 150px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+  
+#container2 {
+  flex-direction: row;
+  border: 1px solid red;
+  display: inline-flex;
+  line-height: 200px;
+} 
+
+
+/* MOBILE */
+
+@media (min-width: 480px) and (max-width:767px){
+
+body {
+text-align: center; 
+}
+main #a{
+width: 480px;
+height: 75px;
+background-color: rgb(90, 186, 241);
+line-height: 75px;
+} 
+main #b{
+width: 480px;
+height: 150px;
+background-color: rgb(54, 137, 185);
+line-height: 150px;
+display: flex;
+}
+main #c{
+width: 480px;
+height: 125px;
+background-color: rgb(30, 86, 119);
+line-height: 125px;
+
+}
+main #d{
+width: 480px;
+height: 125px;
+background-color: rgb(25, 64, 87);
+line-height: 125px;
+}
+main #e{
+width: 240px;
+height: 250px;
+background-color: rgb(10, 57, 85);
+display: flex;
+line-height: 250px;
+}
+main #f {
+width: 240px;
+height: 250px;
+background-color: rgb(236, 238, 101);
+display: flex;
+line-height: 250px;
+
+}
+main #g{
+width: 240px;
+height: 250px;
+background-color: rgb(90, 186, 241);
+display: flex;
+line-height: 250px;
+
+}
+main #h {
+width: 240px;
+height: 250px;
+background-color: rgb(134, 136, 17);
+/* display: flex; */
+line-height: 250px;
+
+}
+
+footer {
+background-color: pink;
+width: 480px;
+height: 80px;
+clear: left;
+line-height: 80px;
+} 
+
+/* #container1 {
   flex-direction: row;
   border: 1px solid green;
   line-height: 150px;
@@ -165,5 +181,6 @@ footer {
   border: 1px solid red;
   display: inline-flex;
   line-height: 200px;
-
+  }
+ */
 }
