@@ -1,280 +1,185 @@
+
+
 html{
   color: wheat
 }
+body{
+  margin: 0px auto;
+  width: 480px;
+  text-align: center;
+}
+
+.grids{
+  display: grid;
+  grid-template-columns: 240px 240px;
+  grid-template-rows: 75px 150px 125px 125px 250px 250px 80px;
+}
+
 .grid-a {
   background-color:#000000;
-  height: 100px;
-  line-height: 150px;
+  line-height: 75px;
+  grid-column: span 2 / 3;
+  grid-row: 1;
 }
+
 .grid-b {
   background-color:#0a0236;
-  height: 600px;
-  line-height: 600px;
+  line-height: 150px;
+  grid-column: span 2 / 3;
+  grid-row: 2;
 }
+
 .grid-c {
   background-color: #0e0250;
-  height: 200px;
-  line-height: 200px;
+  line-height: 125px;
+  grid-column: span 2 / 3;
+  grid-row: 3;
+
 }
 .grid-d {
   background-color: #0f0355;
-  height: 200px;
-  line-height: 200px;
+  line-height: 125px;
+  grid-column: span 2 / 3;
+  grid-row: 4;
 }
 .grid-e {
-  height: 250px;
   line-height: 250px;
   background-color: #1a0494;
+  grid-column: 1;
+  grid-row: 5;
 }
 .grid-f {
-  height: 250px;
   line-height: 250px;
   background-color: #170485;
+  grid-column: 2;
+  grid-row: 5;
 }
 .grid-g {
-  height: 250px;
   line-height: 250px;
   background-color: #2106bb;
+  grid-column: 1;
+  grid-row: 6;
 }
 .grid-h {
-  height: 250px;
   line-height: 250px;
   background-color: #3514ec;
+  grid-column: 2;
+  grid-row: 6;
 }
-footer {
-  height: 150px;
-  line-height: 150px;
+.grid-i {
+  line-height: 80px;
   background-color: #4e2ffc;
+  grid-column: span 2 / 3;
+  grid-row: 7;
 }
 
-@media(max-width: 767px) {
 
-#grids {
-  display: grid;
-  grid-template-columns: 3;
-  grid-template-rows:  minmax(10px, auto);
-  border: 2px solid #15102f;
-} 
-.grid-a {
-  grid-column: 1 / 5;
-  grid-row: 1;
-  background-color:#00e4f5;
-  height: 75px;
-  line-height: 75 px;
-}
-.grid-b {
-  grid-column: 1 / 5;
-  grid-row: 2 / 3;
-  background-color: #00aebb;
-  height: 150px;
-  line-height: 150px;
-}
-    
-.grid-c {
-  grid-column: 1 / 5;
-  grid-row: 3/ 4;
-  background-color: #00909b;
-  height: 125px;
-  line-height: 125px;
-      }
-    
-.grid-d {
-  grid-column: 1 / 5;
-  grid-row: 4/ 5;
-  background-color:#18393b;
-  height: 125px;
-  line-height: 125px;
-}
-.grid-e {
-  grid-column: 1 / 3;
-  grid-row: 5/ 6;
-  line-height: 250px;
-  background-color: #68a2a7;
-}
-.grid-f {
-  grid-column: 3 / 5;
-  grid-row: 5/ 6;
-  line-height: 250px;
-  background-color: #EB3A73;
-}
-    
-.grid-g {
-  grid-column: 1 / 3;
-  grid-row: 7 / 8;
-  height: 250px;
-  line-height: 250px;
-  background-color: #164e52;
-}
-.grid-h {
-  grid-column: 3 / 5;
-  grid-row: 7 / 8;
-  height: 250px;
-  line-height: 250px;
-  background-color: #ccee0a;
-} 
-footer {
-  grid-column: 1 / 5;
-  grid-row: 8 / 9;
-  height: 80px;
-  line-height: 80px;
-  background-color: #deee84;
-}
+
+
+/* @media (min-width: 768px){
+  body{
+    width: 768px;
+  }
+  .grids{
+    grid-template-columns: 384px 384px;
+  }
+} */
+
+
+@media (min-width: 960px){
+  body{
+    width: 960px;
+    margin: 0px auto;
+    text-align: center;
+  }
+.grids{
+    display: grid;
+    grid-template-columns: 200px 190px 190px 190px 190px;
+    grid-template-rows: 100px 200px 250px 150px;
+  }
 
 .grid-a {
-  grid-column: 1 / 6;
-  grid-row: 1;
-  background-color:#f6fa009a;
-  height: 100px;
+  background-color:#91ff00;
   line-height: 100px;
-}
-
-.grid-b {
-  grid-column: 1 / 2;
-  grid-row: 2/ 7;
-  background-color:#f2f85f;
-  height: 600px;
-  line-height: 600px;
-}
-
-.grid-c {
-  grid-column: 2 / 4;
-  grid-row: 2 / 5;
-  background-color: #688800;
-  height: 200px;
-  line-height: 200px;
-}
-
-.grid-d {
-  grid-column: 4/6;
-  grid-row: 2 / 5;
-  background-color: #ccee0a;
-  height: 200px;
-  line-height: 200px;
-}
-
-.grid-e {
-  grid-column: 2 / 3;
-  grid-row: 5 / 6;
-  height: 250px;
-  line-height: 250px;
-  background-color: #2332a9;
-}
-
-.grid-f {
-  grid-column: 3 / 4;
-  grid-row: 5/ 6;
-  height: 250px;
-  line-height: 250px;
-  background-color: #b7aac0;
-}
-
-.grid-g {
-  grid-column: 4 / 5;
-  grid-row: 5 / 6;
-  height: 250px;
-  line-height: 250px;
-  background-color: #d2f8ff;
-}
-
-.grid-h {
-  grid-column: 5 / 6;
-  grid-row: 5 / 6;
-  height: 250px;
-  line-height: 250px;
-  background-color: #feb9ae;
-}
-
-footer {
-  grid-column: 2 / 6;
-  grid-row: 6 / 7;
-  height: 150px;
-  line-height: 150px;
-  background-color: #030427;
-}
-
-@media(max-width: 767px) {
-
-#grids {
-  display: grid;
-  grid-template-columns: 3;
-  grid-template-rows:  minmax(10px, auto);
-  border: 2px solid black;   
-} 
-.grid-a {
-  grid-column: 1 / 5;
+  grid-column: span 5 / 6;
   grid-row: 1;
-  background-color:#d4a178;
-  height: 75px;
-  line-height: 75 px;
 }
+
 .grid-b {
-  grid-column: 1 / 5;
-  grid-row: 2 / 3;
-  background-color: #e2914e;
-  height: 150px;
-  line-height: 150px;
-} 
+  background-color:#2b0aeb;
+  line-height: 600px;
+  grid-row: span 3 / 5;
+  grid-column: 1;
+}
+
 .grid-c {
-  grid-column: 1 / 5;
-  grid-row: 3/ 4;
-  background-color: #c58958;
-  height: 125px;
-  line-height: 125px;
+  background-color: #69941a;
+  line-height: 200px;
+  grid-column: span 2 / 4;
+  grid-row: 2;
 }
 .grid-d {
-  grid-column: 1 / 5;
-  grid-row: 4/ 5;
-  background-color: #a16c41;
-  height: 125px;
-  line-height: 125px;
+  background-color: #e40bd9;
+  line-height: 200px;
+  grid-column: span 2 / 6;
+  grid-row: 2;
 }
-  
 .grid-e {
-  grid-column: 1 / 3;
-  grid-row: 5/ 6;
   line-height: 250px;
-  background-color: #b87036;
-  }
-  
+  background-color: #1a0494;
+  grid-column: 2;
+  grid-row: 3;
+}
 .grid-f {
-  grid-column: 3 / 5;
-  grid-row: 5/ 6;
   line-height: 250px;
-  background-color: #d37426;
-  }
-  
-  .grid-g {
-  grid-column: 1 / 3;
-  grid-row: 7 / 8;
-  height: 250px;
+  background-color: #f10914;
+  grid-column: 3;
+  grid-row: 3;
+}
+.grid-g {
   line-height: 250px;
-  background-color: #e47216;
-  }
-  
-  .grid-h {
-  grid-column: 3 / 5;
-  grid-row: 7 / 8;
-  height: 250px;
+  background-color: #b6e60a;
+  grid-column: 4;
+  grid-row: 3;
+}
+.grid-h {
   line-height: 250px;
-  background-color: #ff7300;
-  }
-  
-footer {
-  grid-column: 1 / 5;
-  grid-row: 8 / 9;
-  height: 80px;
-  line-height: 80px;
-  background-color: #501900;
+  background-color: #3514ec;
+  grid-column: 5;
+  grid-row: 3;
+}
+.grid-i {
+  line-height: 150px;
+  background-color: #ddc55a;
+  grid-column: span 4 / 6;
+  grid-row-start: 4;
   }
 }
 
-* {
-  font-family: 'Times New Roman', Times, serif;
-  text-align: center;
-}
-#grids {
-  display: grid;
-  grid-template-columns: repeat(5);
-  grid-template-rows:  minmax(100px, auto);
-  border: 2px solid black;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
